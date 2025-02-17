@@ -266,8 +266,8 @@ def main():
                 st.sidebar.write('I am NOVA version 1.0, your personal assistant. I can perform tasks like opening YouTube, Google Chrome, Gmail, StackOverflow, taking photos, searching Wikipedia, predicting weather, getting top headlines, and answering computational or geographical questions!')
 
             elif "who made you" in statement or "who created you" in statement or "who discovered you" in statement:
-                speak("I was built by Sujay and Pranshu")
-                st.sidebar.write("I was built by Sujay and Pranshu")
+                speak("I was built by Sujay")
+                st.sidebar.write("I was built by Sujay")
 
             elif "open stack overflow" in statement:
                 webbrowser.open_new_tab("https://stackoverflow.com")
