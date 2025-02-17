@@ -54,6 +54,93 @@ def takeCommand():
             speak("Sorry, my speech service is down.")
         return "None"
 
+
+st.markdown("""
+    <style>
+        /* Global styles */
+        body {
+            background-color: #282c34; /* Dark background for the whole app */
+            font-family: 'Arial', sans-serif;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Neon effect for the title */
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            color: #61dafb; /* Light blue color */
+            animation: neon 1.5s ease-in-out infinite alternate;
+        }
+
+        /* Neon effect for the sidebar header */
+        .css-1q9syg9 {
+            font-size: 20px;
+            color: #ff00ff; /* Neon pink color */
+            padding-left: 15px;
+            font-weight: bold;
+            animation: neon 1.5s ease-in-out infinite alternate;
+        }
+
+        /* Sidebar styles */
+        .css-1d391kg {
+            background-color: #21252b; /* Dark sidebar background */
+            color: white;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        /* Button styles */
+        .stButton>button {
+            background-color: #61dafb; /* Light blue background */
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .stButton>button:hover {
+            background-color: #21a1f1; /* Darker blue on hover */
+            transform: scale(1.1);
+        }
+
+        /* Neon effect animation */
+        @keyframes neon {
+            0% {
+                text-shadow: 0 0 5px #61dafb, 0 0 10px #61dafb, 0 0 15px #61dafb, 0 0 20px #61dafb, 0 0 25px #61dafb, 0 0 30px #61dafb, 0 0 35px #61dafb;
+            }
+            100% {
+                text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff, 0 0 30px #ff00ff, 0 0 35px #ff00ff;
+            }
+        }
+
+        /* Header text styling */
+        h3 {
+            color: #ff9800; /* Orange color for subtitle */
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /* Sidebar links */
+        .css-1m6nu1r {
+            font-size: 18px;
+            color: #ffcc00;
+        }
+
+        .css-1m6nu1r:hover {
+            color: #ff6f61; /* Hover color */
+        }
+
+        /* Remove animation on commands like "open camera" */
+        .stButton>button:focus {
+            outline: none;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 # Streamlit app
 def main():
     st.title("AI Personal Assistant -  NOVA")
